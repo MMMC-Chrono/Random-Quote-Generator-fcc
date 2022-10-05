@@ -1,10 +1,20 @@
 class TextGenerator extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            clicked: 0
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
 
+    handleChange() {
+        this.setState({
+            clicked: this.state.clicked + 1
+        })
     }
 
     render () {
+
         const quotes = [
             {
                 quote: "If your dream don't scare you, they aren't big enough.", author: "Mohamad Ali"
@@ -32,17 +42,19 @@ class TextGenerator extends React.Component {
                 quote: "Everyone must choose one of two pains: The pain of discipline or the pain of regret.", author: "Jim John"
             }
         ];
-        const randomQuote = Math.floor(Math.random()*13);
+
+        const randomQuote = quotes[Math.floor(Math.random()*12)];
+        const orderedQuote = quotes[this.state.clicked];
+        
         return (
             <div>
             <div id="text">
-             <p>{quotes[9].quote}</p>
-             <p>{randomQuote} </p>
+                <p>{this.state.clicked <= 11? orderedQuote.quote : randomQuote.quote}</p>
             </div>
             <div id="author">
-                {quotes[9].author}
+                <p>{this.state.clicked <= 11? orderedQuote.author : randomQuote.author}</p>
             </div>
-            <button id="new-quote" class="btn btn-default">New Quote</button>
+            <button id="new-quote" class="btn btn-default" onClick={this.handleChange}>New Quote</button>
             <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank" src="" class="btn btn-default">Tweet Quote</a>
             </div>
         )
