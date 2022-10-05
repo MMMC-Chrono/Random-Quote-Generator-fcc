@@ -17,7 +17,7 @@ class TextGenerator extends React.Component {
 
         const quotes = [
             {
-                quote: "If your dream don't scare you, they aren't big enough.", author: "Mohamad Ali"
+                quote: "If your dream don't scare you, they aren't big enough.", author: "Ellen Johnson Sirleaf"
             }, {
                 quote: "Persistence is the most travelled path to success.", author: "Bryant H. McGill"
             }, {

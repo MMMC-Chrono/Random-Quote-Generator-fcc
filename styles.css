@@ -1,13 +1,28 @@
 * {
     box-sizing: border-box;
-    box-shadow: rgba( 120, 120, 120, 0.04)
 }
 
-#quote-box {
+:root {
+    --light-gray: #ECECEC;
+    --gray: #BFBFBF;
+    --dark-gray: #585858;
+    --light-red: #CF291D;
+    --dark-red: #B50717;
+}
+
+#quote-generator {
     position: relative;
-    background-color: gray;
-    padding: 10px;
-    max-width: 400px;
-    top: 20px;
+    background-color: var(--gray);
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    top: 20vh;
     margin: 0 auto;
+    padding: 10px;
+}
+
+@media (max-width:600px) {
+    #quote-generator {
+        width: 450px;
+        top: 50vh;
+    }
 }
