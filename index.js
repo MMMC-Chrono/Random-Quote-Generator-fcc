@@ -33,7 +33,6 @@ class TextGenerator extends React.Component {
             }
         ];
         const randomQuote = Math.floor(Math.random()*13);
-
         return (
             <div>
             <div id="text">
@@ -43,6 +42,8 @@ class TextGenerator extends React.Component {
             <div id="author">
                 {quotes[9].author}
             </div>
+            <button id="new-quote" class="btn btn-default">New Quote</button>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank" src="" class="btn btn-default">Tweet Quote</a>
             </div>
         )
     }
