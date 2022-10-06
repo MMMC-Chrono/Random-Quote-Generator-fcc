@@ -8,21 +8,75 @@
     --dark-gray: #585858;
     --light-red: #CF291D;
     --dark-red: #B50717;
+    --tab: #242930;
 }
 
-#quote-generator {
+#background {
+    position: fixed;
+    background-color: var(--dark-gray);
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+}
+/* laptop screen start*/
+#laptop {
     position: relative;
     background-color: var(--gray);
     max-width: 800px;
     aspect-ratio: 16/9;
     top: 20vh;
     margin: 0 auto;
-    padding: 10px;
+}
+/* laptop screen end*/
+/* browser start */
+#browser {
+    background-color: rgb(22, 23, 30);
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    z-index: 1;
+}
+
+#tab-1 {
+    position: absolute;
+    background-color: var(--tab);
+    width: 25%;
+    height: 50%;
+    border-radius: 7px 7px 0 0;
+    opacity: 80%;
+}
+
+#tab-2 {
+    position: absolute;
+    background-color: var(--tab);
+    left: 25%;
+    width: 25%;
+    height: 50%;
+    border-radius: 7px 7px 0 0;
+    opacity: 80%;
+}
+
+#bar {
+    position: absolute;
+    background-color: var(--tab);
+    top: 50%;
+    width: 100%;
+    height: 50%;
+}
+/* browser end */
+#quote-generator {
+    padding-top: 10%;
 }
 
 @media (max-width:600px) {
-    #quote-generator {
+    #laptop {
         width: 450px;
         top: 50vh;
+    }
+}
+
+@media (min-width:600px) {
+    #tab-1, #tab-2 {
+        border-radius: 11px 11px 0 0;
     }
 }
