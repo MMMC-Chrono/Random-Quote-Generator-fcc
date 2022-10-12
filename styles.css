@@ -152,12 +152,87 @@ address a {
 }
 /*generator end*/
 
-@media (max-width:600px) {
-    #laptop {
-        width: 450px;
-        top: 50vh;
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    #background {
+        background-image: radial-gradient(closest-side at 50% 70%, transparent, black);
+    }
+    #laptop-screen {
+        max-width: 500px;
+        border-radius: 3px;
+        bottom: 15px;
+    }
+    #laptop-body {
+        width: 30%;
+        max-width: 550px;
+        height: 10px;
+        border-radius: 3px 3px 0 0;
+    }
+    .tabs, .bar {
+        font-size: 8px;
+    }
+    #tab-1, #tab-2 {
+        padding: 3px;
+        border-radius: 3px;
+        margin: 1px;
+    }
+    #tab-1 {
+        margin-left: 2px;
+        margin-right: 0;
+    }
+    .fa-xmark {
+        margin-left: 5px;
+    }
+    #close {
+        right: 3px;
+    }
+    .bar {
+        padding: 2px 0;
+    }
+    #address-bar {
+        border-radius: 10px;
+    }
+    #address-bar span {
+        margin: 0 30px;
+    }
+    #left-icons i, #right-icons i, #address-bar i, #close i {
+        padding: 3px;
+    }
+    .bi-dash {
+        font-weight: bolder;
+        font-size: 10px;
+        margin-right: 3px;
+    }
+    #quote-box {
+        margin: 10px 30px;
+        border-radius: 5px;
+    }
+    #text {   
+        margin-top: 10px;
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+    #author {
+        margin: 0 10px;
+        font-size: 9px;
+    }
+    #new-quote {
+        margin-top: 9px;
+        left: 35px;
+        font-size: 10px;
+    }
+    #tweet-quote {  
+        margin-top: 9px;
+        right: 35px;
+        font-size: 10px;
+    }
+    footer {
+        font-size: 10px;
+        margin-top: 40px;
+        height: 45px;
     }
 }
+
 
 @media (min-width:600px) {
     #tab-1, #tab-2 {
