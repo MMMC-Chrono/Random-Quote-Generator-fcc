@@ -233,14 +233,91 @@ address a {
     }
 }
 
-
-@media (min-width:600px) {
-    #tab-1, #tab-2 {
-        border-radius: 11px 11px 0 0;
+@media (min-width: 601px) {
+    #background {
+        background-image: radial-gradient(closest-corner at 50% 65%, transparent, black);
+    } 
+    #laptop-screen {
+        width: 70%;
+        max-width: 700px;
+        border: 5px solid black;
+        border-radius: 4px;
+        bottom: 20px;
     }
-    #tab-1 span, #tab-2 span {
-        font-size: 90%;
-        top: 15%;
-        left: 9%;
+    #stand {
+        width: 3%;
+    }
+    #laptop-body {
+        width: 30%;
+        max-width: 500px;
+        height: 12px;
+        border-radius: 5px 5px 0 0;
+    }
+    .tabs, .bar {
+        font-size: 15px;
+    }
+    #tab-1, #tab-2 {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 2px;
+    }
+    #tab-1 {
+        margin-right: 0;
+    }
+    .fa-xmark {
+        margin-left: 9px;
+    }
+    #close {
+        right: 5px;
+    }
+    .bar {
+        padding: 5px 0;
+    }
+    #address-bar {
+        border-radius: 15px;
+    }
+    #address-bar span {
+        margin: 0 10px;
+    }
+    #left-icons i, #right-icons i, #address-bar i, #close i {
+        padding: 5px;
+    }
+    .bi-dash {
+        font-weight: bolder;
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    #quote-generator {
+        margin: auto 25px;
+    }
+    #quote-box {
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    #text {   
+        margin: 0 5px;
+        margin-top: 15px;
+        width: 400px;
+        height:  90px;
+        font-size: 20px;
+    }
+    #author {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    #new-quote {
+        margin-top: 13px;
+        left: 110px;
+        font-size: 13px;
+    }
+    #tweet-quote {  
+        margin-top: 13px;
+        right: 110px;
+        font-size: 13px;
+    }
+    footer {
+        font-size: 11px;
+        margin-top: 70px;
+        height: 50px;
     }
 }
