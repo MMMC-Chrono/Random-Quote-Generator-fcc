@@ -3,12 +3,13 @@
 }
 
 :root {
-    --light-gray: #ECECEC;
-    --gray: #BFBFBF;
-    --dark-gray: #585858;
-    --light-red: #CF291D;
-    --dark-red: #B50717;
-    --tab: #242930;
+    --dark-blue: #111522;
+    --dark-gray: #414245;
+    --dark-gray-transparent: #41424587;
+    --primary: #2F3C7E;
+    --secondary: #FBEAEB;
+    --light-primary: #7e86b3;
+    --testing: #7ed6d6;
 }
 
 #background {
@@ -26,6 +27,8 @@
     aspect-ratio: 16/9;
     top: 20vh;
     margin: 0 auto;
+    border: 3px solid black;
+    border-top: 5px solid white;
 }
 /* laptop screen end*/
 /* browser start */
@@ -68,22 +71,23 @@
 
 #close {
     position: absolute;
-    color: white;
-    font-size: 55%;
     top: 35%;
     right: 5%;
 }
 
 #plus {
     position: absolute;
-    color: white;
-    font-size: 55%;
     right: -10%;
     top: 35%;
 
 }
-/*tabs end */
 
+.icon {
+    color: white;
+    font-size: 55%;
+}
+
+/*tabs end */
 #bar {
     position: absolute;
     background-color: var(--tab);
@@ -91,7 +95,15 @@
     width: 100%;
     height: 50%;
 }
+/*left start*/
+#left-icons {
+    position: absolute;
+    background-color: gray;
+    width: 15%;
+    height: 100%;
+}
 
+/*left end*/
 /* browser end */
 #quote-generator {
     padding-top: 10%;
@@ -112,6 +124,5 @@
         font-size: 90%;
         top: 15%;
         left: 9%;
-        
     }
 }
