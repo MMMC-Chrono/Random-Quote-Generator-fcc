@@ -3,7 +3,6 @@ const button=document.querySelector('#new-quote');
 const colors=['#ccccff', '#ffccff', '#ffcccc', '#ffffcc'];
 body.style.backgroundColor='#7e86b3';
 button.addEventListener('click', function(){
-    const colorIndex=parseInt(Math.random()*colors.length);
+    const colorIndex = Math.floor(Math.random() * 4) + 1;
     body.style.backgroundColor=colors[colorIndex];
-    
 })
